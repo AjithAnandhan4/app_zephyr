@@ -1,0 +1,13 @@
+/ {
+    aliases {
+        led1 = &led1;
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        led1: led_1 {
+            gpios = <&gpiod 13 GPIO_ACTIVE_HIGH>;
+            label = "User LD3";
+        };
+    };
+};
